@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alok-Shikha</title>
+<link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+  /* background-image: url(ps.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+background-color: brown;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align: left;
+  border: 5px solid gold;
+  margin: 10px 5px;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+marquee{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkblue;
+}
+span{
+    color: wheat;
+}
+h1{
+  font-size: 90px;
+}
+
+@keyframes blink {
+            0% {
+                color: red;
+                /* opacity: 0; */
+                
+            }
+            25% {
+                color: chartreuse;
+                /* opacity: 1; */
+                
+            }
+            50% {
+                color: white;
+                /* opacity: 0; */
+            }
+            75% {
+                color: yellow;
+                /* opacity: 1; */
+            }
+            100% {
+                color: blue;
+                /* opacity: 0; */
+            }
+        }
+
+        .blink-text {
+            animation: blink 1.5s infinite;
+            animation-duration: 9s;
+            animation-timing-function: ease-out;
+            position: relative;
+            top: 500px;
+        }
+        
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+  <center>
+    <h1 class="blink-text">আলোক শিখা</h1>
+  </center>
+  
+    
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="onlinelearn.html" target="_blank">Online Learning Platform</a>
+    <a href="ssc2024.html" target="_blank">SSC 2024 (Test Paper Solve)</a>
+    <a href="EBI.html" target="_blank">EBI (English + Bangla + ICT)</a>
+   
+  </div>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><br>
+    &#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+</body>
+</html>
